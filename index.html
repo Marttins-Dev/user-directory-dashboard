@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Detalhes do usuário -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="fechar">&times;</span>
+            <div id="detalhes"></div>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+
+        <div class="header">
+            <h1>Buscar Usuários</h1>
+            <button id="modoTema">🌙 Alternar Tema</button>
+        </div>
+
+        <div class="controles">
+            <input type="text" id="filtro" placeholder="Filtrar por nome..." />
+            <button id="btnBuscar">Buscar</button>
+        </div>
+
+        <p id="status"></p>
+        <div id="loading" class="loading"></div>
+        <p id="contador"></p>
+
+        <ul id="lista"></ul>
+
+        <!-- Paginação -->
+        <div id="paginacao" style="display: none;">
+            <button id="btnAnterior">← Anterior</button>
+            <button id="btnProximo">Próximo →</button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
